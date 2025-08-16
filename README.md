@@ -1,2 +1,1 @@
-# log-lib
-Simple logging library
+# Log-Lib
