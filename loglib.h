@@ -8,4 +8,12 @@
 */
 int log_init(const char* file_name);
 
+/*
+* Clean up the logging system.
+* Closes the file etc.
+*/
+void log_cleanup(void);
+
+void log_message(const char* message);
+
 #endif
