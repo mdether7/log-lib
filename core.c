@@ -24,7 +24,9 @@ int log_init(const char* file_name)
 
 void log_cleanup(void)
 {
-  fclose(LOG_FILE);
+  if (LOG_FILE) {
+    fclose(LOG_FILE);
+  }
 }
 
 void log_message(enum log_types type, const char* fmt, ...)
